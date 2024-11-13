@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(162, 196, 164);">
+
+    <h1>TITANIC SURVIVAL PREDICTION</h1>
+
+    <form method="GET" action ="/predict_survival">
+        
+        <label>Passenger class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "Pclass">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <select name = "Gender">
+
+            <option value = "male">Male</option>
+            <option value = "female">Female</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "Age">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>SibSp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "SibSp">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Parch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "Parch">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Fare&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "Fare">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Embarked&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label for = "Embarked">
+        <select name = "Embarked" id="Embarked">
+                <option value = "S">S</option>
+                <option value = "C">C</option>
+                <option value = "Q">Q</option>
+        </select>
+
+        <br>
+        <br>
+
+        <br>
+       <input type = "submit" value = "SUBMIT">
+
+       <br>
+       <p> <b> {{prediction}} </b></p>
+
+    </form>
+
+    
+</body>
+</html>
